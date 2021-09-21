@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Timer</title>
+  </head>
+  <body>
+    <header>
+      <h1>Timer</h1>
+    </header>
+    <label for="time">Enter the time in minutes</label>
+    <div class="container">
+      <input
+        type="number"
+        class="time"
+        id="minutes"
+        min="0"
+        value="0"
+        placeholder="0"
+      />
+      <span>Minutes</span>
+      <input
+        type="number"
+        class="time"
+        id="seconds"
+        min="0"
+        value="0"
+        placeholder="0"
+      />
+      <span>Seconds</span>
+    </div>
+    <div class="buttons">
+      <button id="startBtn">start</button>
+      <button id="stopBtn">stop</button>
+      <button id="restart">restart</button>
+    </div>
+    <div class="focusTime">
+      <label>FocusTime :</label>
+      <span id="focusTime">0</span>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
